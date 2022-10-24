@@ -1,6 +1,6 @@
 package com.proyectointegrador.backend.controller;
 
-import com.proyectointegrador.backend.domain.SoftSkills;
+import com.proyectointegrador.backend.domain.Skills;
 
 import com.proyectointegrador.backend.service.skillsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ public class skillsController {
      * @return List<Skills>
      */
     @GetMapping("/skills")
-    public Iterable<SoftSkills> getSkills() {
+    public Iterable<Skills> getSkills() {
         return skillsService.findAll();
     }
 }

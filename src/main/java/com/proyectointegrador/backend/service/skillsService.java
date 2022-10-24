@@ -1,10 +1,10 @@
 package com.proyectointegrador.backend.service;
 
-import com.proyectointegrador.backend.domain.SoftSkills;
+import com.proyectointegrador.backend.domain.Skills;
 
 import java.util.List;
 
 public interface skillsService {
 
-    List<SoftSkills> findAll();
+    List<Skills> findAll();
 }

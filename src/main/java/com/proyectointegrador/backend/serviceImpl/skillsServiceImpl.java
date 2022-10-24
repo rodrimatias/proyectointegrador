@@ -1,6 +1,6 @@
 package com.proyectointegrador.backend.serviceImpl;
 
-import com.proyectointegrador.backend.domain.SoftSkills;
+import com.proyectointegrador.backend.domain.Skills;
 import com.proyectointegrador.backend.repository.skillsRepository;
 import com.proyectointegrador.backend.service.skillsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +18,8 @@ public class skillsServiceImpl implements skillsService {
      * @return list of skills
      */
     @Override
-    public List<SoftSkills> findAll() {
-        List<SoftSkills> iterable = skillsRepository.findAll();
+    public List<Skills> findAll() {
+        List<Skills> iterable = skillsRepository.findAll();
         return iterable;
     }
 }
